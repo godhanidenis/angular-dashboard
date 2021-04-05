@@ -1,0 +1,43 @@
+<div class="card">
+  <div class="card-body">
+    <!-- <fa-icon [icon]="faArrowCircleDown" transform="rotate-{{-30}}"
+      [styles]="{'stroke': '#dff5e3', 'color': '#dff5e3', 'width':'25','height':'25'}">
+    </fa-icon> -->
+    <div class="d-flex align-items-center">
+      <div class="mr-3">
+        <fa-layers>
+          <fa-icon [icon]="faCircle" [styles]="{'stroke': '#e5f7e8', 'color': '#e5f7e8', width:'25', height:'25'}">
+          </fa-icon>
+          <fa-icon [icon]=" faArrowDown" [inverse]="true"
+            [styles]="{'stroke': '#77d587', 'color': '#77d587',width:'20', height:'20'}"
+            transform="rotate--30 right-2 shrink-5">
+          </fa-icon>
+        </fa-layers>
+      </div>
+      <div>
+        {{pourData['percent'] + '%'}}
+      </div>
+    </div>
+    <div [id]="pourData['name'] + '-chart'">
+    </div>
+    <div class="d-flex align-items-center">
+      <div class="mr-5">
+        <fa-layers>
+          <fa-icon [icon]="faSquare" [styles]="{'stroke': '#e5f7e8', 'color': '#e5f7e8', width:'50', height:'50'}">
+          </fa-icon>
+          <fa-icon [icon]="icon" [inverse]="true"
+            [styles]="{'stroke': '#77d587', 'color': '#77d587',width:'30', height:'30'}" transform="right-5 shrink-5">
+          </fa-icon>
+        </fa-layers>
+      </div>
+      <div class="d-flex flex-column">
+        <div class="text">
+          {{pourData['title']}}
+        </div>
+        <div>
+          <h3>{{ (pourData['count']) || (pourData['rate'] + '%')}}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

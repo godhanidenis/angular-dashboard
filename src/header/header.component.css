@@ -1,0 +1,54 @@
+.navbar-container {
+  height: 200px;
+}
+.navbar-links {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-link {
+  color: white;
+  margin-right: 15px;
+}
+
+.search-box {
+  position: relative;
+}
+
+.brand-part {
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.brand-part a {
+  text-decoration: none;
+  color: white;
+}
+
+.avtar {
+  margin-left: 25px;
+}
+
+.profile-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+::placeholder {
+  color: #d4dcdd;
+  opacity: 1;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+/* #navbarTogglerDemo03 {
+  display: flex;
+  justify-content: space-between;
+} */

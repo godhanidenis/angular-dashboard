@@ -1,0 +1,66 @@
+.container-fluid {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+.dashboard-header {
+  height: 200px;
+  background-color: #1abbcd;
+}
+
+.dashboard-body {
+  background-color: #f9fafc;
+}
+
+.header-container {
+  position: relative;
+}
+
+.overlap {
+  position: absolute;
+}
+
+.dashboard-area-cards {
+  z-index: 10;
+  margin-top: 150px;
+}
+
+h6 {
+  font-weight: bold;
+  margin: 0;
+}
+
+@media (min-width: 1200px) {
+  .body-container {
+    margin-top: 210px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .body-container {
+    margin-top: 430px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .body-container {
+    margin-top: 900px;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+  .body-container {
+    margin-top: 880px;
+  }
+}
+
+@media (max-width: 500px) {
+  .body-container {
+    margin-top: 800px;
+  }
+}
+
+[class*="col-"]:not(:last-child) {
+  margin-bottom: 15px;
+}

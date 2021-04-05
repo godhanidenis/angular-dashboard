@@ -1,0 +1,46 @@
+.card {
+  min-height: 250px;
+}
+
+.card-content {
+  color: white;
+  background-image: url("https://d1ur6kmwm8qfeo.cloudfront.net/wp-content/uploads/2019/05/adult-chair-coffee-374831-e1557026592192.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.card-content .card-body {
+  width: 70%;
+}
+
+.res-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+h6 {
+  font-weight: bold;
+}
+
+.rate-part {
+  width: 30%;
+}
+
+#line-chart {
+  width: 70%;
+}
+
+.text {
+  color: grey;
+}
+
+/* .class-analysis-container {
+  margin-bottom: 10px;
+  margin-top: 10px;
+} */
+
+[class*="col-"]:not(:last-child) {
+  margin-bottom: 15px;
+}

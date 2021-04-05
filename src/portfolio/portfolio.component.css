@@ -1,0 +1,80 @@
+p {
+  font-family: Lato;
+  margin: 0;
+}
+.card {
+  margin: 10px;
+  width: 100%;
+}
+.border-item {
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+.inline-data {
+  display: flex;
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.title fa-icon {
+  margin-left: 5px;
+}
+.balance h6 {
+  margin-top: 0.2rem;
+}
+.balance p {
+  padding-left: 10px;
+}
+
+.chart-container {
+  flex-flow: wrap;
+}
+
+#pie-container {
+  padding-right: 25px;
+}
+
+.title p {
+  color: grey;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+
+@media (max-width: 768px) {
+  .content {
+    flex-wrap: wrap;
+  }
+
+  .border-item {
+    border-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .xyz .chart-container {
+    border-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 991px) {
+  .xyz > div {
+    border-right: 0px;
+    margin-bottom: 5px;
+  }
+}
+
+[class*="col-"]:not(:last-child) {
+  margin-bottom: 15px;
+}
